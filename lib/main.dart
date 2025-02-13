@@ -1,23 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:website_profile/homePage/homePage.dart';
+import 'package:website_profile/homepage/home_page.dart';
 
 void main() {
-  runApp(const sennaWeb());
+  runApp(const SennaProduction());
 }
 
-class sennaWeb extends StatelessWidget {
-  const sennaWeb({super.key});
+class SennaProduction extends StatelessWidget {
+  const SennaProduction({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Senna Event & Wedding Organizer",
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        fontFamily: 'Roboto',
-      ),
-      home: const HomePage(),
+      home: HomePage(),
     );
   }
 }
